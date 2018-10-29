@@ -15,7 +15,7 @@
 		};
 
 	}
-	angular.directive('integer', function () {
+/*	angular.directive('integer', function () {
 
 		return {
 			require: 'ngModel',
@@ -32,5 +32,5 @@
 				};
 			}
 		};
-	});
+	});*/
 })();

@@ -4,6 +4,7 @@
 		.module('app')
 		.controller('ForgotController', ForgotController);
 
-	function ForgotController() {
+	function ForgotController($scope) {
+
 	}
 })();

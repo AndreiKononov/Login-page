@@ -45,8 +45,7 @@
 			<p></p>
 			<div>
 				<label for="age">Age</label>
-				<input id="age" type="text" name="age" class="form-control" ng-model="user.age"
-					   ng-pattern="/^-?[0-9][^\.]*$/"  required>
+				<input id="age" type="text" name="age" class="form-control" ng-model="user.age" required>
 				<span class="error" ng-show="myForm.age.$error.required">
         			Field shouldn't be empty!
 				</span>
