@@ -1,10 +1,9 @@
 ﻿(function () {
-	'use strict';
-	angular
-		.module('app')
-		.controller('LoginController', LoginController);
+  'use strict';
+  angular
+    .module('app')
+      .controller('LoginController', LoginController);
 
-	function LoginController($scope) {
-
-	}
+   function LoginController($scope) {
+   }
 })();
