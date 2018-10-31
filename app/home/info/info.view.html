@@ -1,0 +1,30 @@
+<div class="tab-wrap">
+  <div class="tab__content">
+    <h3>Info</h3>
+    <form class="form-signin">
+      <div>
+        <label>Name</label>
+        <p>{{vm.user.name}}</p>
+      </div>
+      <div>
+        <label>Age</label>
+        <p>{{vm.user.age}}</p>
+      </div>
+      <div>
+        <label>Birthday</label>
+        <p>{{vm.user.birthday}}</p>
+      </div>
+      <div>
+        <label>Date of login</label>
+        <p>{{vm.user.notification}}</p>
+      </div>
+      <div>
+        <label>Date of notification</label>
+        <p>{{vm.user.login}}</p>
+      </div>
+    </form>
+    <div class="tab-pane active in">
+      <a ui-sref="login" class="btn btn-danger">Logout</a>
+    </div>
+  </div>
+</div>

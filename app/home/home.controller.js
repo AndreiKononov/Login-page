@@ -4,14 +4,12 @@
     .controller('HomeController', HomeController)
     .directive('integer', integer);
 
-  function HomeController($scope) {
-    $scope.user = {
-      id: '1',
-      name: 'Andrei',
-      age: '33',
-      birthday: '1985/01/11',
-      notification: '27-10-2018',
-      login: '27 10 2018'
+  function HomeController() {
+    var vm = this;
+    vm.submitForm = function () {
+      if (vm.myForm.$valid) {
+
+      }
     };
   }
 

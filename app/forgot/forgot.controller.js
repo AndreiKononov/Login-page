@@ -3,7 +3,10 @@
   angular.module('app')
     .controller('ForgotController', ForgotController);
 
-  function ForgotController($scope) {
+  function ForgotController() {
+    var vm = this;
+    vm.submitForm = function () {
 
+    };
   }
 })();

@@ -1,0 +1,59 @@
+<div class="tab-wrap">
+  <div class="tab__content">
+    <h3>Edit your profile</h3>
+    <form name="myForm" class="form-signin" ng-submit="vm.submitForm()" novalidate>
+      <div>
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name" class="form-control" ng-model="vm.user.name"
+               placeholder="Name / Name Lastname" required>
+        <span class="error" ng-show="myForm.name.$error.required">
+          Field shouldn't be empty!
+        </span>
+      </div>
+      <p></p>
+      <div>
+        <label for="age">Age</label>
+        <input id="age" type="text" name="age" class="form-control" ng-model="vm.user.age" placeholder="18 - 65"
+               required>
+        <span class="error" ng-show="myForm.age.$error.required">
+          Field shouldn't be empty!
+        </span>
+      </div>
+      <p></p>
+      <div>
+        <label for="birthday">Birthday</label>
+        <input id="birthday" type="text" name="birthday" class="form-control" ng-model="vm.user.birthday"
+               placeholder="YYYY/MM/DD" required>
+        <span class="error" ng-show="myForm.birthday.$error.required">
+          Field shouldn't be empty!
+        </span>
+      </div>
+      <p></p>
+      <div>
+        <label for="login">Date of login</label>
+        <input id="login" type="text" name="login" class="form-control" ng-model="vm.user.notification"
+               placeholder="DD-MM-YY" required>
+        <span class="error" ng-show="myForm.login.$error.required">
+          Field shouldn't be empty!
+        </span>
+      </div>
+      <p></p>
+      <div>
+        <label for="notification">Date of notification</label>
+        <input id="notification" type="text" name="notification" class="form-control" ng-model="vm.user.login"
+               placeholder="DD MM YY" required>
+        <span class="error" ng-show="myForm.notification.$error.required">
+          Field shouldn't be empty!
+        </span>
+      </div>
+      <p></p>
+      <div>
+        <p></p>
+        <button type="submit" ui-sref="home.info" class="btn btn-primary" ng-disabled="myForm.$invalid">Update</button>
+      </div>
+    </form>
+    <div class="tab-pane active in">
+      <a ui-sref="login" class="btn btn-danger">Logout</a>
+    </div>
+  </div>
+</div>

@@ -1,5 +1,5 @@
 ﻿<div class="container">
-  <form name="forgotForm" role="form" class="form-signin" novalidate>
+  <form name="forgotForm" role="form" class="form-forgot" ng-submit="vm.submitForm()" novalidate>
     <h2>Forgot password?</h2>
     <div>
       <label for="password" class="sr-only">New password</label>
@@ -7,10 +7,10 @@
              placeholder="New password" required autofocus>
     </div>
     <div>
-      <button href="#!/login" ng-disabled="forgotForm.$invalid" class="btn btn-primary">
+      <button type="submit"  ng-disabled="forgotForm.$invalid" class="btn btn-primary">
         Update password
       </button>
-      <a href="#!/login" class="btn btn-danger">Logout</a>
+      <a ui-sref="login" class="btn btn-danger">Logout</a>
     </div>
   </form>
 </div>

@@ -1,9 +1,14 @@
 ﻿(function () {
   'use strict';
-  angular
-    .module('app')
-      .controller('LoginController', LoginController);
+  angular.module('app')
+    .controller('LoginController', LoginController);
 
-   function LoginController($scope) {
-   }
+  function LoginController() {
+    var vm = this;
+    vm.submitForm = function () {
+      if (vm.loginForm.$valid) {
+
+      }
+    };
+  }
 })();

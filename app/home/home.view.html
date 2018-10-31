@@ -1,88 +1,10 @@
 ﻿<div class="container">
   <div class="tab-wrap">
-    <input type="radio" id="tab1" name="tabGroup" class="tab">
+    <input type="radio" id="tab1" name="tabGroup" class="tab" ui-sref=".info">
     <label for="tab1">User info</label>
-    <input type="radio" id="tab2" name="tabGroup" class="tab">
+    <input type="radio" id="tab2" name="tabGroup" class="tab" ui-sref=".update">
     <label for="tab2">Update info</label>
-    <div class="tab__content">
-      <h3>Info</h3>
-      <form class="form-signin">
-        <div>
-          <label for="name">Name</label>
-          <p>{{user.name}}</p>
-        </div>
-        <div>
-          <label for="age">Age</label>
-          <p>{{user.age}}</p>
-        </div>
-        <div>
-          <label for="birthday">Birthday</label>
-          <p>{{user.birthday}}</p>
-        </div>
-        <div>
-          <label for="login">Date of login</label>
-          <p>{{user.notification}}</p>
-        </div>
-        <div>
-          <label for="notification">Date of notification</label>
-          <p>{{user.login}}</p>
-        </div>
-      </form>
-      <div class="tab-pane active in">
-        <a href="#!/login" class="btn btn-danger">Logout</a>
-      </div>
-    </div>
-    <div class="tab__content">
-      <h3>Edit your profile</h3>
-      <form name="myForm" class="form-signin" novalidate>
-        <div>
-          <label for="name">Name</label>
-          <input id="name" type="text" name="name" class="form-control" ng-model="user.name" required>
-          <span class="error" ng-show="myForm.name.$error.required">
-            Field shouldn't be empty!
-          </span>
-        </div>
-        <p></p>
-        <div>
-          <label for="age">Age</label>
-          <input id="age" type="text" name="age" class="form-control" ng-model="user.age" required>
-          <span class="error" ng-show="myForm.age.$error.required">
-            Field shouldn't be empty!
-          </span>
-        </div>
-        <p></p>
-        <div>
-          <label for="birthday">Birthday</label>
-          <input id="birthday" type="text" name="birthday" class="form-control" ng-model="user.birthday" required>
-          <span class="error" ng-show="myForm.birthday.$error.required">
-            Field shouldn't be empty!
-          </span>
-        </div>
-        <p></p>
-        <div>
-          <label for="login">Date of login</label>
-          <input id="login" type="text" name="login" class="form-control" ng-model="user.notification" required>
-          <span class="error" ng-show="myForm.login.$error.required">
-            Field shouldn't be empty!
-          </span>
-        </div>
-        <p></p>
-        <div>
-          <label for="notification">Date of notification</label>
-          <input id="notification" type="text" name="notification" class="form-control" ng-model="user.login" required>
-          <span class="error" ng-show="myForm.notification.$error.required">
-            Field shouldn't be empty!
-          </span>
-        </div>
-        <p></p>
-        <div>
-          <p></p>
-          <button class="btn btn-primary" ng-disabled="myForm.$invalid">Update</button>
-        </div>
-      </form>
-      <div class="tab-pane active in">
-        <a href="#!/login" class="btn btn-danger">Logout</a>
-      </div>
-    </div>
+
   </div>
+  <div ui-view></div>
 </div>
