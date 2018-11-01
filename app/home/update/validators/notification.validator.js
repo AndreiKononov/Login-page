@@ -1,7 +1,7 @@
 (function () {
   'use strict';
   var app = angular.module('app');
-  var   NOTIFICATION_FORMAT_REGEXP = /^([0-2]\d|3[01])-(0\d|1[012])-(\d{2})$/;
+  var   NOTIFICATION_FORMAT_REGEXP = /^(([0-2]\d|3[01])-(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)-\d{2}$)/;
 
   app.directive('notification', function() {
     return {

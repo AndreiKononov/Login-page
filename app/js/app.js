@@ -1,14 +1,14 @@
 (function () {
   'use strict';
   angular.module('app', ['ui.router'])
-    .factory('user', function () {
+    .service('user', function () {
       return {
         id: '1',
         name: 'Andrei',
         age: '33',
         birthday: '1985/01/11',
-        notification: '27 10 2018',
-        login: '27-10-18'
+        login: '27 October 2018',
+        notification: '27-Oct-18'
       };
     })
     .config(function ($stateProvider, $urlRouterProvider) {

@@ -40,25 +40,25 @@
       <p></p>
       <div>
         <label for="login">Date of login</label>
-        <input id="login" type="text" name="login" class="form-control" ng-model="vm.user.notification"
-               placeholder="DD MM YYYY" required login>
+        <input id="login" type="text" name="login" class="form-control" ng-model="vm.user.login"
+               placeholder="DD MMMM YYYY" required login>
         <span class="error" ng-show="myForm.login.$error.required">
           Field shouldn't be empty!
         </span>
         <span class="error" ng-show="myForm.login.$error.login">
-          The value must be in format DD MM YYYY
+          The value must be in format DD MMMM YYYY
         </span>
       </div>
       <p></p>
       <div>
         <label for="notification">Date of notification</label>
-        <input id="notification" type="text" name="notification" class="form-control" ng-model="vm.user.login"
-               placeholder="DD-MM-YY" required notification>
+        <input id="notification" type="text" name="notification" class="form-control" ng-model="vm.user.notification"
+               placeholder="DD-MMM-YY" required notification>
         <span class="error" ng-show="myForm.notification.$error.required">
           Field shouldn't be empty!
         </span>
         <span class="error" ng-show="myForm.notification.$error.notification">
-          The value must be in format DD-MM-YY
+          The value must be in format DD-MMM-YY
         </span>
       </div>
       <p></p>

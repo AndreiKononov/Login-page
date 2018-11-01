@@ -1,7 +1,7 @@
 (function () {
   'use strict';
   var app = angular.module('app');
-  var LOGIN_FORMAT_REGEXP = /^([0-2]\d|3[01]) (0\d|1[012]) (\d{4})$/;
+  var LOGIN_FORMAT_REGEXP = /^(([0-2]\d|3[01]) (January|February|March|April|May|June|July|August|September|October|Novenber|December) \d{4}$)/;
 
   app.directive('login', function() {
     return {
