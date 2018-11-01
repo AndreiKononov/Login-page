@@ -6,8 +6,8 @@
         <label for="name">Name</label>
         <input id="name" type="text" name="name" class="form-control" ng-model="vm.user.name"
                placeholder="Name / Name Lastname" required username>
-        <span ng-show="myForm.name.$pending.username">Checking if this name is available...</span>
-        <span ng-show="myForm.name.$error.username">This username is already taken!</span>
+        <span ng-show="myForm.name.$pending.username">Checking if this name is correct...</span>
+        <span ng-show="myForm.name.$error.username">This username doesn't match the rule upper camel case!</span>
         <span class="error" ng-show="myForm.name.$error.required">
           Field shouldn't be empty!
         </span>
