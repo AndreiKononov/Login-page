@@ -7,8 +7,8 @@
         name: 'Andrei',
         age: '33',
         birthday: '1985/01/11',
-        notification: '27-10-2018',
-        login: '27 10 2018'
+        notification: '27 10 2018',
+        login: '27-10-18'
       };
     })
     .config(function ($stateProvider, $urlRouterProvider) {

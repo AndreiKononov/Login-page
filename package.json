@@ -12,7 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "angular": "1.7.5",
-    "angular-cookies": "1.7.5",
     "angular-ui-router": "1.0.20",
     "bootstrap": "3.3.6",
     "del": "3.0.0",

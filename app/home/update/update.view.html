@@ -5,7 +5,9 @@
       <div>
         <label for="name">Name</label>
         <input id="name" type="text" name="name" class="form-control" ng-model="vm.user.name"
-               placeholder="Name / Name Lastname" required>
+               placeholder="Name / Name Lastname" required username>
+        <span ng-show="myForm.name.$pending.username">Checking if this name is available...</span>
+        <span ng-show="myForm.name.$error.username">This username is already taken!</span>
         <span class="error" ng-show="myForm.name.$error.required">
           Field shouldn't be empty!
         </span>
@@ -13,37 +15,50 @@
       <p></p>
       <div>
         <label for="age">Age</label>
-        <input id="age" type="text" name="age" class="form-control" ng-model="vm.user.age" placeholder="18 - 65"
-               required>
+        <input id="age" type="text" name="age" class="form-control" ng-model="vm.user.age"
+               placeholder="18 - 65"
+               required integer>
         <span class="error" ng-show="myForm.age.$error.required">
           Field shouldn't be empty!
+        </span>
+        <span class="error" ng-show="myForm.age.$error.integer">
+          The value must be in range 18 to 65!
         </span>
       </div>
       <p></p>
       <div>
         <label for="birthday">Birthday</label>
         <input id="birthday" type="text" name="birthday" class="form-control" ng-model="vm.user.birthday"
-               placeholder="YYYY/MM/DD" required>
+               placeholder="YYYY/MM/DD" required birthday>
         <span class="error" ng-show="myForm.birthday.$error.required">
           Field shouldn't be empty!
+        </span>
+        <span class="error" ng-show="myForm.birthday.$error.birthday">
+          The value must be in format YYYY/MM/DD
         </span>
       </div>
       <p></p>
       <div>
         <label for="login">Date of login</label>
         <input id="login" type="text" name="login" class="form-control" ng-model="vm.user.notification"
-               placeholder="DD-MM-YY" required>
+               placeholder="DD MM YYYY" required login>
         <span class="error" ng-show="myForm.login.$error.required">
           Field shouldn't be empty!
+        </span>
+        <span class="error" ng-show="myForm.login.$error.login">
+          The value must be in format DD MM YYYY
         </span>
       </div>
       <p></p>
       <div>
         <label for="notification">Date of notification</label>
         <input id="notification" type="text" name="notification" class="form-control" ng-model="vm.user.login"
-               placeholder="DD MM YY" required>
+               placeholder="DD-MM-YY" required notification>
         <span class="error" ng-show="myForm.notification.$error.required">
           Field shouldn't be empty!
+        </span>
+        <span class="error" ng-show="myForm.notification.$error.notification">
+          The value must be in format DD-MM-YY
         </span>
       </div>
       <p></p>
