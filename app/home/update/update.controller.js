@@ -5,6 +5,11 @@
 
   function UpdateController(user) {
     var vm = this;
-    vm.user = user;
+    vm.userData = {};
+    user.loadData().then(
+      (data) =>{
+        vm.userData = data;
+      }
+    )
   }
 })();

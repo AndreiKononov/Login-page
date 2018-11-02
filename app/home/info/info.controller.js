@@ -5,6 +5,19 @@
 
   function InfoController(user) {
     var vm = this;
-    vm.user = user;
+    vm.userData = {};
+    user.loadData()
+      .then(
+        (data) => {
+          console.log(data);
+          vm.userData = data;
+        },
+        (reason) => {
+          console.log(reason);
+        },
+        (update) => {
+          console.log(update);
+        }
+      )
   }
 })();

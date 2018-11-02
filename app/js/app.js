@@ -1,16 +1,6 @@
 (function () {
   'use strict';
   angular.module('app', ['ui.router'])
-    .service('user', function () {
-      return {
-        id: '1',
-        name: 'Andrei',
-        age: '33',
-        birthday: '1985/01/11',
-        login: '27 October 2018',
-        notification: '27-Oct-18'
-      };
-    })
     .config(function ($stateProvider, $urlRouterProvider) {
       $urlRouterProvider.otherwise('/login');
       $stateProvider

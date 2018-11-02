@@ -4,7 +4,7 @@
     <form name="myForm" class="form-signin" ng-submit="vm.submitForm()" novalidate>
       <div>
         <label for="name">Name</label>
-        <input id="name" type="text" name="name" class="form-control" ng-model="vm.user.name"
+        <input id="name" type="text" name="name" class="form-control" ng-model="vm.userData.name"
                placeholder="Name / Name Lastname" required username>
         <span ng-show="myForm.name.$pending.username">Checking if this name is correct...</span>
         <div ng-show="myForm.name.$pending.username" class="load-mask">
@@ -18,7 +18,7 @@
       <p></p>
       <div>
         <label for="age">Age</label>
-        <input id="age" type="text" name="age" class="form-control" ng-model="vm.user.age"
+        <input id="age" type="text" name="age" class="form-control" ng-model="vm.userData.age"
                placeholder="18 - 65"
                required integer>
         <span class="error" ng-show="myForm.age.$error.required">
@@ -31,7 +31,7 @@
       <p></p>
       <div>
         <label for="birthday">Birthday</label>
-        <input id="birthday" type="text" name="birthday" class="form-control" ng-model="vm.user.birthday"
+        <input id="birthday" type="text" name="birthday" class="form-control" ng-model="vm.userData.birthday"
                placeholder="YYYY/MM/DD" required birthday>
         <span class="error" ng-show="myForm.birthday.$error.required">
           Field shouldn't be empty!
@@ -43,7 +43,7 @@
       <p></p>
       <div>
         <label for="login">Date of login</label>
-        <input id="login" type="text" name="login" class="form-control" ng-model="vm.user.login"
+        <input id="login" type="text" name="login" class="form-control" ng-model="vm.userData.login"
                placeholder="DD MMMM YYYY" required login>
         <span class="error" ng-show="myForm.login.$error.required">
           Field shouldn't be empty!
@@ -55,7 +55,7 @@
       <p></p>
       <div>
         <label for="notification">Date of notification</label>
-        <input id="notification" type="text" name="notification" class="form-control" ng-model="vm.user.notification"
+        <input id="notification" type="text" name="notification" class="form-control" ng-model="vm.userData.notification"
                placeholder="DD-MMM-YY" required notification>
         <span class="error" ng-show="myForm.notification.$error.required">
           Field shouldn't be empty!
