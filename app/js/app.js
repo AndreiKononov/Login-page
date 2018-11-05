@@ -1,6 +1,6 @@
 (function () {
   'use strict';
-  angular.module('app', ['ui.router'])
+  angular.module('app', ['ui.router', 'pascalprecht.translate'])
     .config(function ($stateProvider, $urlRouterProvider) {
       $urlRouterProvider.otherwise('/login');
       $stateProvider
@@ -34,5 +34,15 @@
           controller: 'UpdateController',
           controllerAs: 'vm'
         })
-    });
+    })
+    .config(['$translateProvider', function ($translateProvider) {
+      $translateProvider.useSanitizeValueStrategy(null);
+      $translateProvider.useStaticFilesLoader({
+        prefix: '/localisation/lang-',
+        suffix: '.json'
+      });
+      $translateProvider.preferredLanguage('en');
+      // remember language
+      //$translateProvider.useLocalStorage();
+    }])
 })();

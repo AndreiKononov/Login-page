@@ -26,10 +26,17 @@ gulp.task('js', () => {
     .pipe(gulpConnect.reload());
 });
 
+gulp.task('json', () => {
+  gulp.src('app/**/*.json')
+    .pipe(gulp.dest('./dist'))
+    .pipe(gulpConnect.reload());
+});
+
 gulp.task('watch', () => {
   gulp.watch('app/**/*.html', ['html']);
   gulp.watch('app/sass/**/*.scss', ['sass']);
   gulp.watch('app/**/*.js', ['js']);
+  gulp.watch('app/**/*.json', ['json']);
 });
 
 gulp.task('connect', () => gulpConnect.server({
@@ -42,7 +49,7 @@ gulp.task('clean:dist', () => {
   return del.sync('dist');
 });
 
-gulp.task('build', ['clean:dist', 'html', 'sass', 'js']);
+gulp.task('build', ['clean:dist', 'html', 'sass', 'js', 'json']);
 
 gulp.task('default', ['build', 'watch', 'connect']);
 

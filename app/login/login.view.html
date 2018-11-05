@@ -1,4 +1,9 @@
 ﻿<div class="container">
+  <ul ng-controller="langCtrl" style="cursor: pointer">
+    <li><a ng-click="switchLang('ru')" translate="LINK_RU"></a></li>
+    <li><a ng-click="switchLang('en')" translate="LINK_EN"></a></li>
+  </ul>
+
   <form name="loginForm" class="form-signin" ng-submit="submitForm()" novalidate>
     <h2 class="form-signin-heading">Log in</h2>
     <label for="inputEmail" class="sr-only">Email</label>
@@ -24,5 +29,10 @@
     <button ui-sref="home" class="btn btn-lg btn-primary btn-block" ng-disabled="loginForm.$invalid">
       Sign in
     </button>
+
+    <div ng-controller="langCtrl">
+      <p translate="TEXT"></p>
+      <p translate="PARAGRAPH"></p>
+    </div>
   </form>
 </div>
