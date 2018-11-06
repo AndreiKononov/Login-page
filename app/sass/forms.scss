@@ -5,7 +5,6 @@
 
   & a {
     float: right;
-    cursor: pointer;
   }
 
   & .form-signin-heading,
@@ -46,6 +45,10 @@
   max-width: 380px;
   padding: 15px;
   margin: 0 auto;
+
+  & a {
+    float: right;
+  }
 
   & .form-control {
     position: relative;

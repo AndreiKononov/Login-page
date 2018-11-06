@@ -1,6 +1,37 @@
 {
-  "TEXT": "Какой-то текст!",
-  "PARAGRAPH": "Параграф!",
   "LINK_RU": "Русский",
-  "LINK_EN": "Английский"
+  "LINK_EN": "Английский",
+  "LOGIN": "Авторизация",
+  "FORGOT": "Забыли пороль?",
+  "REMEMBER_ME": "Запомнить меня",
+  "SING_IN": "Войти",
+  "EMAIL": "Электронная почта",
+  "PASSWORD": "Пароль",
+  "EMPTY_EMAIL_WARNING": "Впишите свою почту.",
+  "INVALID_EMAIL_WARNING": "Неверный формат почты.",
+  "EMPTY_PASSWORD_WARNING": "Впишите свой пароль.",
+  "NEW_PASS": "Новый пароль",
+  "LOGOUT": "Выход",
+  "UPDATE": "Обновить",
+  "USER_INFO_TAB": "Профайл пользователя",
+  "UPDATE_INFO_TAB": "Обновить профайл",
+  "USER_INFO": "Информация о пользователе",
+  "EDIT_PROFILE": "Обновите профайл",
+  "FORM_LABELS": {
+    "NAME": "Имя",
+    "LAST_NAME": "Фамилия",
+    "AGE": "Возраст",
+    "BIRTHDAY": "Дата рождения",
+    "LOGIN_DATE": "Дата входа",
+    "NOTIFICATION_DATE": "Дата уведомления"
+  },
+  "FORM_WARNINGS": {
+    "FIELD_IS_EMPTY": "Поле не должно быть пустым!",
+    "USERNAME_IS_WRONG": "Данное имя пользователя не соответствует правилу 'upper camel case'!",
+    "AGE_IS_WRONG": "Значение должно быть в диапазоне от 18 до 65!",
+    "BIRTHDAY_FORMAT_IS_WRONG": "Значение должно быть в формате YYYY/MM/DD",
+    "LOGIN_FORMAT_IS_WRONG": "Значение должно быть в формете DD MMMM YYYY",
+    "NOTIFICATION_FORMAT_IS_WRONG": "Значение должно быть в формате DD-MMM-YY"
+  },
+  "ASYNC_CHECKING_NOTIFICATION": "Проверка корректности имени пользователя..."
 }

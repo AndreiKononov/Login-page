@@ -12,15 +12,15 @@
           if (ctrl.$isEmpty(modelValue)) {
             return $q.resolve();
           }
-          var def = $q.defer();
+          var deferred = $q.defer();
           $timeout(function() {
             if (USERNAME_FORMAT_REGEXP1.test(viewValue) || USERNAME_FORMAT_REGEXP2.test(viewValue)) {
-              def.resolve();
+              deferred.resolve();
             } else {
-              def.reject();
+              deferred.reject();
             }
           }, 3000);
-          return def.promise;
+          return deferred.promise;
         };
       }
     };

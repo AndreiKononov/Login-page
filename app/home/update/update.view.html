@@ -1,77 +1,63 @@
 <div class="tab-wrap">
   <div class="tab__content">
-    <h3>Edit your profile</h3>
+    <h3 translate="EDIT_PROFILE"></h3>
     <form name="myForm" class="form-signin" ng-submit="vm.submitForm()" novalidate>
       <div>
-        <label for="name">Name</label>
+        <label for="name">{{"FORM_LABELS.NAME" | translate}}</label>
         <input id="name" type="text" name="name" class="form-control" ng-model="vm.userData.name"
-               placeholder="Name / Name Lastname" required username>
-        <span ng-show="myForm.name.$pending.username">Checking if this name is correct...</span>
+               placeholder="{{'FORM_LABELS.NAME' | translate}} / {{'FORM_LABELS.NAME' | translate}} {{'FORM_LABELS.LAST_NAME' | translate}}" required username>
+        <span ng-show="myForm.name.$pending.username" translate="ASYNC_CHECKING_NOTIFICATION"></span>
         <div ng-show="myForm.name.$pending.username" class="load-mask">
         </div>        
-        <span ng-show="myForm.name.$error.username">This username doesn't match the rule upper camel case!</span>
-        <span class="error" ng-show="myForm.name.$error.required">
-          Field shouldn't be empty!
-        </span>
-
+        <span ng-show="myForm.name.$error.username" translate="FORM_WARNINGS.USERNAME_IS_WRONG"></span>
+        <span class="error" ng-show="myForm.name.$error.required" translate="FORM_WARNINGS.FIELD_IS_EMPTY"></span>
       </div>
       <p></p>
       <div>
-        <label for="age">Age</label>
+        <label for="age">{{"FORM_LABELS.AGE" | translate}}</label>
         <input id="age" type="text" name="age" class="form-control" ng-model="vm.userData.age"
                placeholder="18 - 65"
                required integer>
-        <span class="error" ng-show="myForm.age.$error.required">
-          Field shouldn't be empty!
-        </span>
-        <span class="error" ng-show="myForm.age.$error.integer">
-          The value must be in range 18 to 65!
-        </span>
+        <span class="error" ng-show="myForm.age.$error.required" translate="FORM_WARNINGS.FIELD_IS_EMPTY"></span>
+        <span class="error" ng-show="myForm.age.$error.integer" translate="FORM_WARNINGS.AGE_IS_WRONG"></span>
       </div>
       <p></p>
       <div>
-        <label for="birthday">Birthday</label>
+        <label for="birthday">{{"FORM_LABELS.BIRTHDAY" | translate}}</label>
         <input id="birthday" type="text" name="birthday" class="form-control" ng-model="vm.userData.birthday"
                placeholder="YYYY/MM/DD" required birthday>
-        <span class="error" ng-show="myForm.birthday.$error.required">
-          Field shouldn't be empty!
-        </span>
-        <span class="error" ng-show="myForm.birthday.$error.birthday">
-          The value must be in format YYYY/MM/DD
-        </span>
+        <span class="error" ng-show="myForm.birthday.$error.required" translate="FORM_WARNINGS.FIELD_IS_EMPTY"></span>
+        <span class="error" ng-show="myForm.birthday.$error.birthday"
+              translate="FORM_WARNINGS.BIRTHDAY_FORMAT_IS_WRONG"></span>
       </div>
       <p></p>
       <div>
-        <label for="login">Date of login</label>
+        <label for="login">{{"FORM_LABELS.LOGIN_DATE" | translate}}</label>
         <input id="login" type="text" name="login" class="form-control" ng-model="vm.userData.login"
                placeholder="DD MMMM YYYY" required login>
-        <span class="error" ng-show="myForm.login.$error.required">
-          Field shouldn't be empty!
-        </span>
-        <span class="error" ng-show="myForm.login.$error.login">
-          The value must be in format DD MMMM YYYY
+        <span class="error" ng-show="myForm.login.$error.required" translate="FORM_WARNINGS.FIELD_IS_EMPTY"></span>
+        <span class="error" ng-show="myForm.login.$error.login" translate="FORM_WARNINGS.LOGIN_FORMAT_IS_WRONG">
+
         </span>
       </div>
       <p></p>
       <div>
-        <label for="notification">Date of notification</label>
+        <label for="notification">{{"FORM_LABELS.NOTIFICATION_DATE" | translate}}</label>
         <input id="notification" type="text" name="notification" class="form-control" ng-model="vm.userData.notification"
                placeholder="DD-MMM-YY" required notification>
-        <span class="error" ng-show="myForm.notification.$error.required">
-          Field shouldn't be empty!
-        </span>
-        <span class="error" ng-show="myForm.notification.$error.notification">
-          The value must be in format DD-MMM-YY
-        </span>
+        <span class="error" ng-show="myForm.notification.$error.required" translate="FORM_WARNINGS.FIELD_IS_EMPTY"></span>
+        <span class="error" ng-show="myForm.notification.$error.notification"
+              translate="FORM_WARNINGS.NOTIFICATION_FORMAT_IS_WRONG"></span>
       </div>
       <p></p>
       <div>
         <p></p>
-        <button type="submit" ui-sref="home.info" class="btn btn-primary" ng-disabled="myForm.$invalid">Update</button>
+        <button type="submit" ui-sref="home.info" class="btn btn-primary" ng-disabled="myForm.$invalid"
+                translate="BUTTONS.UPDATE"></button>
       </div>
     </form>
     <div class="tab-pane active in">
-      <a ui-sref="login" class="btn btn-danger">Logout</a>
+      <a ui-sref="login" class="btn btn-danger" translate="BUTTONS.LOGOUT"></a>
     </div>
   </div>
 </div>

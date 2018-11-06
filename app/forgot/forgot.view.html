@@ -1,16 +1,19 @@
 ﻿<div class="container">
+  <ul ng-controller="langCtrl">
+    <li><a ng-click="switchLang('ru')" translate="LINKS.RU"></a></li>
+    <li><a ng-click="switchLang('en')" translate="LINKS.EN"></a></li>
+  </ul>
   <form name="forgotForm" role="form" class="form-forgot" ng-submit="vm.submitForm()" novalidate>
-    <h2>Forgot password?</h2>
+    <h2 translate="LINKS.FORGOT"></h2>
     <div>
       <label for="password" class="sr-only">New password</label>
       <input type="password" name="password" id="password" ng-model="password" class="form-control"
-             placeholder="New password" required autofocus>
+             placeholder="{{'NEW_PASS' | translate}}" required autofocus>
     </div>
     <div>
-      <button type="submit"  ng-disabled="forgotForm.$invalid" class="btn btn-primary">
-        Update password
+      <button type="submit"  ng-disabled="forgotForm.$invalid" class="btn btn-primary" translate="BUTTONS.UPDATE">
       </button>
-      <a ui-sref="login" class="btn btn-danger">Logout</a>
+      <a ui-sref="login" class="btn btn-danger" translate="BUTTONS.LOGOUT"></a>
     </div>
   </form>
 </div>

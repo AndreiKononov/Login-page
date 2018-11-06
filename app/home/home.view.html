@@ -1,9 +1,13 @@
 ﻿<div class="container">
+  <ul ng-controller="langCtrl">
+    <li><a ng-click="switchLang('ru')" translate="LINKS.RU"></a></li>
+    <li><a ng-click="switchLang('en')" translate="LINKS.EN"></a></li>
+  </ul>
   <div class="tab-wrap">
     <input type="radio" id="tab1" name="tabGroup" class="tab" ui-sref=".info">
-    <label for="tab1">User info</label>
+    <label for="tab1" translate="TAB.USER_INFO"></label>
     <input type="radio" id="tab2" name="tabGroup" class="tab" ui-sref=".update">
-    <label for="tab2">Update info</label>
+    <label for="tab2" translate="TAB.UPDATE_INFO"></label>
 
   </div>
   <div ui-view></div>

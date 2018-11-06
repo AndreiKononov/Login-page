@@ -1,30 +1,32 @@
 <div class="tab-wrap">
   <div class="tab__content">
-    <h3>Info</h3>
-    <form class="form-signin">
+    <h3 translate="USER_INFO"></h3>
+    <form class="form-signin" name="infoForm">
       <div>
-        <label>Name</label>
+        <label>{{"FORM_LABELS.NAME" | translate}}</label>
         <p>{{vm.userData.name}}</p>
       </div>
+      <div ng-show="!vm.userData.name" class="load-mask">
+      </div>
       <div>
-        <label>Age</label>
+        <label>{{"FORM_LABELS.AGE" | translate}}</label>
         <p>{{vm.userData.age}}</p>
       </div>
       <div>
-        <label>Birthday</label>
+        <label>{{"FORM_LABELS.BIRTHDAY" | translate}}</label>
         <p>{{vm.userData.birthday}}</p>
       </div>
       <div>
-        <label>Date of login</label>
+        <label>{{"FORM_LABELS.LOGIN_DATE" | translate}}</label>
         <p>{{vm.userData.login}}</p>
       </div>
       <div>
-        <label>Date of notification</label>
+        <label>{{"FORM_LABELS.NOTIFICATION_DATE" | translate}}</label>
         <p>{{vm.userData.notification}}</p>
       </div>
     </form>
     <div class="tab-pane active in">
-      <a ui-sref="login" class="btn btn-danger">Logout</a>
+      <a ui-sref="login" class="btn btn-danger" translate="BUTTONS.LOGOUT"></a>
     </div>
   </div>
 </div>

@@ -1,6 +1,37 @@
 {
-  "TEXT": "Some text!",
-  "PARAGRAPH": "Paragraph!",
   "LINK_RU": "Russian",
-  "LINK_EN": "English"
+  "LINK_EN": "English",
+  "LOGIN": "Log in",
+  "FORGOT": "Forgot password?",
+  "REMEMBER_ME": "Remember me",
+  "SING_IN": "Sing in",
+  "EMAIL": "Email",
+  "PASSWORD": "Password",
+  "EMPTY_EMAIL_WARNING": "Write your email.",
+  "INVALID_EMAIL_WARNING": "Not a valid email.",
+  "EMPTY_PASSWORD_WARNING": "Write your password.",
+  "NEW_PASS": "New password",
+  "LOGOUT": "Logout",
+  "UPDATE": "Update",
+  "USER_INFO_TAB": "User info",
+  "UPDATE_INFO_TAB": "Update info",
+  "USER_INFO": "User Info",
+  "EDIT_PROFILE": "Edit your profile",
+  "FORM_LABELS": {
+    "NAME": "Name",
+    "LAST_NAME": "Last name",
+    "AGE": "Age",
+    "BIRTHDAY": "Birthday",
+    "LOGIN_DATE": "Date of login",
+    "NOTIFICATION_DATE": "Date of notification"
+  },
+  "FORM_WARNINGS": {
+    "FIELD_IS_EMPTY": "Field shouldn't be empty!",
+    "USERNAME_IS_WRONG": "This username doesn't match the rule upper camel case!",
+    "AGE_IS_WRONG": "The value must be in range 18 to 65!",
+    "BIRTHDAY_FORMAT_IS_WRONG": "The value must be in format YYYY/MM/DD",
+    "LOGIN_FORMAT_IS_WRONG": "The value must be in format DD MMMM YYYY",
+    "NOTIFICATION_FORMAT_IS_WRONG": "The value must be in format DD-MMM-YY"
+  },
+  "ASYNC_CHECKING_NOTIFICATION": "Checking if this name is correct..."
 }

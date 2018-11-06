@@ -3,7 +3,7 @@
   angular.module('app')
     .controller('InfoController', InfoController);
 
-  function InfoController(user) {
+  function InfoController(user, $timeout) {
     var vm = this;
     vm.userData = {};
     user.loadData()
@@ -18,6 +18,11 @@
         (update) => {
           console.log(update);
         }
-      )
+      );
+    vm.timer = function () {
+      $timeout(function() {
+
+      }, 1000);
+    }
   }
 })();
