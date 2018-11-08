@@ -1,12 +1,12 @@
 <div class="tab-wrap">
   <div class="tab__content">
     <h3 translate="USER_INFO"></h3>
+    <div ng-show="!vm.userData.name" class="load-mask">
+    </div>
     <form class="form-signin" name="infoForm">
       <div>
         <label>{{"FORM_LABELS.NAME" | translate}}</label>
         <p>{{vm.userData.name}}</p>
-      </div>
-      <div ng-show="!vm.userData.name" class="load-mask">
       </div>
       <div>
         <label>{{"FORM_LABELS.AGE" | translate}}</label>

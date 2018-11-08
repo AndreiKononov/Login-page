@@ -1,20 +1,28 @@
 {
-  "LINK_RU": "Русский",
-  "LINK_EN": "Английский",
+  "LINKS": {
+    "RU": "Русский",
+    "EN": "Английский",
+    "FORGOT": "Забыли пороль?"
+  },
+  "BUTTONS": {
+    "SING_IN": "Войти",
+    "LOGOUT": "Выход",
+    "UPDATE": "Обновить"
+  },
   "LOGIN": "Авторизация",
-  "FORGOT": "Забыли пороль?",
   "REMEMBER_ME": "Запомнить меня",
-  "SING_IN": "Войти",
   "EMAIL": "Электронная почта",
   "PASSWORD": "Пароль",
-  "EMPTY_EMAIL_WARNING": "Впишите свою почту.",
-  "INVALID_EMAIL_WARNING": "Неверный формат почты.",
-  "EMPTY_PASSWORD_WARNING": "Впишите свой пароль.",
+  "LOGIN_WARNINGS": {
+    "EMPTY_EMAIL": "Впишите свою почту.",
+    "INVALID_EMAIL": "Неверный формат почты.",
+    "EMPTY_PASSWORD": "Впишите свой пароль."
+  },
   "NEW_PASS": "Новый пароль",
-  "LOGOUT": "Выход",
-  "UPDATE": "Обновить",
-  "USER_INFO_TAB": "Профайл пользователя",
-  "UPDATE_INFO_TAB": "Обновить профайл",
+  "TAB": {
+    "USER_INFO": "Профайл пользователя",
+    "UPDATE_INFO": "Обновить профайл"
+  },
   "USER_INFO": "Информация о пользователе",
   "EDIT_PROFILE": "Обновите профайл",
   "FORM_LABELS": {

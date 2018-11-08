@@ -1,20 +1,28 @@
 {
-  "LINK_RU": "Russian",
-  "LINK_EN": "English",
+  "LINKS": {
+    "RU": "Russian",
+    "EN": "English",
+    "FORGOT": "Forgot password?"
+  },
+  "BUTTONS": {
+    "SING_IN": "Sing in",
+    "LOGOUT": "Logout",
+    "UPDATE": "Update"
+  },
   "LOGIN": "Log in",
-  "FORGOT": "Forgot password?",
   "REMEMBER_ME": "Remember me",
-  "SING_IN": "Sing in",
   "EMAIL": "Email",
   "PASSWORD": "Password",
-  "EMPTY_EMAIL_WARNING": "Write your email.",
-  "INVALID_EMAIL_WARNING": "Not a valid email.",
-  "EMPTY_PASSWORD_WARNING": "Write your password.",
+  "LOGIN_WARNINGS": {
+    "EMPTY_EMAIL": "Write your email.",
+    "INVALID_EMAIL": "Not a valid email.",
+    "EMPTY_PASSWORD": "Write your password."
+  },
   "NEW_PASS": "New password",
-  "LOGOUT": "Logout",
-  "UPDATE": "Update",
-  "USER_INFO_TAB": "User info",
-  "UPDATE_INFO_TAB": "Update info",
+  "TAB": {
+    "USER_INFO": "User info",
+    "UPDATE_INFO": "Update info"
+  },
   "USER_INFO": "User Info",
   "EDIT_PROFILE": "Edit your profile",
   "FORM_LABELS": {

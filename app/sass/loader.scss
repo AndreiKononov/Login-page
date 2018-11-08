@@ -1,6 +1,6 @@
 .load-mask {
   position: absolute;
-  height: 106%;
+  height: 100%;
   width: 100%;
   background-color: #000;
   bottom: 0;
@@ -26,7 +26,6 @@
     height: 50px;
     -moz-animation: spinPulse 1s infinite ease-in-out;
     -webkit-animation: spinPulse 1s infinite linear;
-
     margin: -25px 0 0 -25px;
     position: absolute;
     top: 50%;
@@ -45,7 +44,6 @@
     height: 30px;
     -moz-animation: spinoffPulse 1s infinite linear;
     -webkit-animation: spinoffPulse 1s infinite linear;
-
     margin: -15px 0 0 -15px;
     position: absolute;
     top: 50%;
